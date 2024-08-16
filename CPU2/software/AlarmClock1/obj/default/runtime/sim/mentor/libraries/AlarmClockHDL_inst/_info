@@ -1,0 +1,32 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/seba2/Documents/quartusProjects/CPU2/software/AlarmClock1/obj/default/runtime/sim/mentor
+vAlarmClockHDL
+!s110 1723771096
+!i10b 1
+!s100 7001NT`J;U:NczbdI^0Z@3
+IJWHm]jXGM7d=k43?bFKW@0
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1723770200
+8C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb/simulation/submodules/AlarmClockHDL.v
+FC:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb/simulation/submodules/AlarmClockHDL.v
+L0 6
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1723771096.000000
+!s107 C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb/simulation/submodules/AlarmClockHDL.v|
+!s90 -reportprogress|300|C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb/simulation/submodules/AlarmClockHDL.v|-work|AlarmClockHDL_inst|
+!i113 1
+o-work AlarmClockHDL_inst
+tCvgOpt 0
+n@alarm@clock@h@d@l

@@ -1,0 +1,16 @@
+	component AlarmClockHDL is
+		port (
+			alarm1_export   : in  std_logic                    := 'X'; -- export
+			button1_export  : in  std_logic                    := 'X'; -- export
+			button2_export  : in  std_logic                    := 'X'; -- export
+			button3_export  : in  std_logic                    := 'X'; -- export
+			button4_export  : in  std_logic                    := 'X'; -- export
+			buzzer_export   : out std_logic_vector(1 downto 0);        -- export
+			clk_clk         : in  std_logic                    := 'X'; -- clk
+			segment1_export : out std_logic_vector(6 downto 0);        -- export
+			segment2_export : out std_logic_vector(6 downto 0);        -- export
+			segment3_export : out std_logic_vector(6 downto 0);        -- export
+			segment4_export : out std_logic_vector(6 downto 0)         -- export
+		);
+	end component AlarmClockHDL;
+

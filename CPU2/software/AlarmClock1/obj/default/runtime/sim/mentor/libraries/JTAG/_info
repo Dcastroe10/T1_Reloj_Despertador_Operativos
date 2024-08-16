@@ -1,0 +1,120 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/seba2/Documents/quartusProjects/CPU2/software/AlarmClock1/obj/default/runtime/sim/mentor
+vAlarmClockHDL_JTAG
+Z1 !s110 1723771095
+!i10b 1
+!s100 LJU`a3Zh5M^E>8P@fP4V>3
+IGMeCUDkI5X900nDb;gogL3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1723770201
+Z4 8C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb/simulation/submodules/AlarmClockHDL_JTAG.v
+Z5 FC:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb/simulation/submodules/AlarmClockHDL_JTAG.v
+L0 331
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1723771095.000000
+Z8 !s107 C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb/simulation/submodules/AlarmClockHDL_JTAG.v|
+Z9 !s90 -reportprogress|300|C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb/simulation/submodules/AlarmClockHDL_JTAG.v|-work|JTAG|
+!i113 1
+Z10 o-work JTAG
+Z11 tCvgOpt 0
+n@alarm@clock@h@d@l_@j@t@a@g
+vAlarmClockHDL_JTAG_scfifo_r
+R1
+!i10b 1
+!s100 D?Yf]lj8mOCFY5`a=jVRE1
+IeBW3M_?H7f[S5DoGZCIbE2
+R2
+R0
+R3
+R4
+R5
+L0 243
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@alarm@clock@h@d@l_@j@t@a@g_scfifo_r
+vAlarmClockHDL_JTAG_scfifo_w
+R1
+!i10b 1
+!s100 IVfclSL=kfX:MIldTCHcz0
+I;oKbE@DdBSLRK=lAEj7Va2
+R2
+R0
+R3
+R4
+R5
+L0 78
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@alarm@clock@h@d@l_@j@t@a@g_scfifo_w
+vAlarmClockHDL_JTAG_sim_scfifo_r
+R1
+!i10b 1
+!s100 `J8Dah`eXIf7TdhIRhiKj1
+I?M;G?OdX<9V?Lh[LBfP0i3
+R2
+R0
+R3
+R4
+R5
+L0 164
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@alarm@clock@h@d@l_@j@t@a@g_sim_scfifo_r
+vAlarmClockHDL_JTAG_sim_scfifo_w
+R1
+!i10b 1
+!s100 ;EDKSNFY[[eCZQbak[`gF3
+IoS=cd9]264?BnTkcX2X]h3
+R2
+R0
+R3
+R4
+R5
+L0 21
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@alarm@clock@h@d@l_@j@t@a@g_sim_scfifo_w

@@ -1,0 +1,32 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/seba2/Documents/quartusProjects/CPU2/software/AlarmClock1/obj/default/runtime/sim/mentor
+vAlarmClockHDL_NIOSII
+!s110 1723771095
+!i10b 1
+!s100 2]?]zVZKfa?d37hGYAKSB1
+IUij?>iWG=0cP:9gGnQi__3
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1723770201
+8C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb/simulation/submodules/AlarmClockHDL_NIOSII.v
+FC:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb/simulation/submodules/AlarmClockHDL_NIOSII.v
+L0 9
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1723771095.000000
+!s107 C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb/simulation/submodules/AlarmClockHDL_NIOSII.v|
+!s90 -reportprogress|300|C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb/simulation/submodules/AlarmClockHDL_NIOSII.v|-work|NIOSII|
+!i113 1
+o-work NIOSII
+tCvgOpt 0
+n@alarm@clock@h@d@l_@n@i@o@s@i@i

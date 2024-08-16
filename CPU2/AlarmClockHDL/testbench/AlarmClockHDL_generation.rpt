@@ -1,0 +1,534 @@
+Info: Starting: Create testbench Platform Designer system
+Info: C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL.ipx
+Info: qsys-generate C:\Users\seba2\Documents\quartusProjects\CPU2\AlarmClockHDL.qsys --testbench=STANDARD --output-directory=C:\Users\seba2\Documents\quartusProjects\CPU2 --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading CPU2/AlarmClockHDL.qsys
+Progress: Reading input file
+Progress: Adding ALARM1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module ALARM1
+Progress: Adding BUTTON1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module BUTTON1
+Progress: Adding BUTTON2 [altera_avalon_pio 18.1]
+Progress: Parameterizing module BUTTON2
+Progress: Adding BUTTON3 [altera_avalon_pio 18.1]
+Progress: Parameterizing module BUTTON3
+Progress: Adding BUTTON4 [altera_avalon_pio 18.1]
+Progress: Parameterizing module BUTTON4
+Progress: Adding BUZZ [altera_avalon_pio 18.1]
+Progress: Parameterizing module BUZZ
+Progress: Adding JTAG [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module JTAG
+Progress: Adding NIOSII [altera_nios2_gen2 18.1]
+Progress: Parameterizing module NIOSII
+Progress: Adding ONCHIPRAM [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module ONCHIPRAM
+Progress: Adding SEGMENT1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module SEGMENT1
+Progress: Adding SEGMENT2 [altera_avalon_pio 18.1]
+Progress: Parameterizing module SEGMENT2
+Progress: Adding SEGMENT3 [altera_avalon_pio 18.1]
+Progress: Parameterizing module SEGMENT3
+Progress: Adding SEGMENT4 [altera_avalon_pio 18.1]
+Progress: Parameterizing module SEGMENT4
+Progress: Adding TIMER [altera_avalon_timer 18.1]
+Progress: Parameterizing module TIMER
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: AlarmClockHDL.ALARM1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: AlarmClockHDL.BUTTON1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: AlarmClockHDL.BUTTON2: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: AlarmClockHDL.BUTTON3: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: AlarmClockHDL.BUTTON4: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: AlarmClockHDL.JTAG: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: qsys-generate succeeded.
+Info: Loading IP catalog for testbench.
+Progress: 
+Progress: 
+Progress: 
+Progress: (2) searching C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/root_components.ipx (ipx file)
+Info: Reading index C:\intelfpga_lite\18.1\quartus\sopc_builder\bin\root_components.ipx
+Info: C:\intelfpga_lite\18.1\quartus\sopc_builder\bin\root_components.ipx: Loading now from components.ipx
+Info: Reading index C:\intelfpga_lite\18.1\quartus\sopc_builder\bin\ip_component_categories.ipx
+Info: C:\intelfpga_lite\18.1\quartus\sopc_builder\bin\ip_component_categories.ipx described 0 plugins, 0 paths, in 0.00 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/ip_component_categories.ipx matched 1 files in 0.00 seconds
+Info: C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/ip/**/* matched 0 files in 0.00 seconds
+Info: Reading index C:\Users\seba2\Documents\quartusProjects\CPU2\AlarmClockHDL\testbench\AlarmClockHDL.ipx
+Progress: Loading CPU2/AlarmClockHDL.qsys
+Info: C:/Users/seba2/Documents/quartusProjects/CPU2/* matched 12 files in 0.00 seconds
+Info: C:/Users/seba2/Documents/quartusProjects/CPU2/ip/**/* matched 0 files in 0.00 seconds
+Info: C:/Users/seba2/Documents/quartusProjects/CPU2/*/* matched 327 files in 0.02 seconds
+Info: C:\Users\seba2\Documents\quartusProjects\CPU2\AlarmClockHDL\testbench\AlarmClockHDL.ipx described 0 plugins, 3 paths, in 0.03 seconds
+Info: C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/* matched 4 files in 0.03 seconds
+Info: C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/*/* matched 0 files in 0.00 seconds
+Info: C:/Users/seba2/.altera.quartus/ip/18.1/**/* matched 0 files in 0.00 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$$QUARTUS_IP_PROJECTDIR/* matched 0 files in 0.00 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$$QUARTUS_IP_USERDIR/* matched 0 files in 0.00 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$$QUARTUS_IP_GLOBALDIR/* matched 0 files in 0.00 seconds
+Info: Reading index C:\intelfpga_lite\18.1\ip\altera\altera_components.ipx
+Info: C:\intelfpga_lite\18.1\ip\altera\altera_components.ipx described 2035 plugins, 0 paths, in 0.40 seconds
+Info: C:/intelfpga_lite/18.1/ip/**/* matched 139 files in 0.41 seconds
+Info: C:/intelfpga_lite/ip/**/* matched 0 files in 0.00 seconds
+Info: Reading index C:\intelfpga_lite\18.1\quartus\sopc_builder\builtin.ipx
+Info: C:\intelfpga_lite\18.1\quartus\sopc_builder\builtin.ipx described 83 plugins, 0 paths, in 0.01 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/**/* matched 8 files in 0.01 seconds
+Info: Reading index C:\intelfpga_lite\18.1\quartus\common\librarian\factories\index.ipx
+Info: C:\intelfpga_lite\18.1\quartus\common\librarian\factories\index.ipx described 151 plugins, 0 paths, in 0.01 seconds
+Info: C:/intelfpga_lite/18.1/quartus/common/librarian/factories/**/* matched 4 files in 0.01 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$IP_IPX_PATH matched 1 files in 0.00 seconds
+Info: C:\intelfpga_lite\18.1\quartus\sopc_builder\bin\root_components.ipx described 0 plugins, 13 paths, in 0.47 seconds
+Info: C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/root_components.ipx matched 1 files in 0.47 seconds
+Progress: 
+Progress: 
+Progress: 
+Info: Running script C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/tbgen.tcl
+Info: send_message Info TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: get_module_property NAME
+Info: send_message Info TB_Gen: System design is: AlarmClockHDL
+Info: TB_Gen: System design is: AlarmClockHDL
+Info: get_interfaces 
+Info: get_connections 
+Info: get_interface_property alarm1 EXPORT_OF
+Info: get_instance_property ALARM1 CLASS_NAME
+Info: get_instance_assignment ALARM1 testbench.partner.map.external_connection
+Info: get_interface_property button1 EXPORT_OF
+Info: get_instance_property BUTTON1 CLASS_NAME
+Info: get_instance_assignment BUTTON1 testbench.partner.map.external_connection
+Info: get_interface_property button2 EXPORT_OF
+Info: get_instance_property BUTTON2 CLASS_NAME
+Info: get_instance_assignment BUTTON2 testbench.partner.map.external_connection
+Info: get_interface_property button3 EXPORT_OF
+Info: get_instance_property BUTTON3 CLASS_NAME
+Info: get_instance_assignment BUTTON3 testbench.partner.map.external_connection
+Info: get_interface_property button4 EXPORT_OF
+Info: get_instance_property BUTTON4 CLASS_NAME
+Info: get_instance_assignment BUTTON4 testbench.partner.map.external_connection
+Info: get_interface_property buzzer EXPORT_OF
+Info: get_instance_property BUZZ CLASS_NAME
+Info: get_instance_assignment BUZZ testbench.partner.map.external_connection
+Info: get_interface_property clk EXPORT_OF
+Info: get_instance_property clk_0 CLASS_NAME
+Info: get_instance_assignment clk_0 testbench.partner.map.clk_in
+Info: get_interface_property segment1 EXPORT_OF
+Info: get_instance_property SEGMENT1 CLASS_NAME
+Info: get_instance_assignment SEGMENT1 testbench.partner.map.external_connection
+Info: get_interface_property segment2 EXPORT_OF
+Info: get_instance_property SEGMENT2 CLASS_NAME
+Info: get_instance_assignment SEGMENT2 testbench.partner.map.external_connection
+Info: get_interface_property segment3 EXPORT_OF
+Info: get_instance_property SEGMENT3 CLASS_NAME
+Info: get_instance_assignment SEGMENT3 testbench.partner.map.external_connection
+Info: get_interface_property segment4 EXPORT_OF
+Info: get_instance_property SEGMENT4 CLASS_NAME
+Info: get_instance_assignment SEGMENT4 testbench.partner.map.external_connection
+Info: send_message Info TB_Gen: Creating testbench system : AlarmClockHDL_tb with all standard BFMs
+Info: TB_Gen: Creating testbench system : AlarmClockHDL_tb with all standard BFMs
+Info: create_system AlarmClockHDL_tb
+Info: add_instance AlarmClockHDL_inst AlarmClockHDL 
+Info: set_use_testbench_naming_pattern true AlarmClockHDL
+Info: get_instance_interfaces AlarmClockHDL_inst
+Info: get_instance_interface_property AlarmClockHDL_inst alarm1 CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst button1 CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst button2 CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst button3 CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst button4 CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst buzzer CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst clk CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst segment1 CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst segment2 CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst segment3 CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst segment4 CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst clk CLASS_NAME
+Info: send_message Info TB_Gen: clock_sink found: clk
+Info: TB_Gen: clock_sink found: clk
+Info: get_instance_interface_property AlarmClockHDL_inst clk CLASS_NAME
+Info: add_instance AlarmClockHDL_inst_clk_bfm altera_avalon_clock_source 
+Info: get_instance_property AlarmClockHDL_inst_clk_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst clk clockRate
+Info: set_instance_parameter_value AlarmClockHDL_inst_clk_bfm CLOCK_RATE 50000000.0
+Info: set_instance_parameter_value AlarmClockHDL_inst_clk_bfm CLOCK_UNIT 1
+Info: get_instance_property AlarmClockHDL_inst_clk_bfm CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst clk CLASS_NAME
+Info: get_instance_interfaces AlarmClockHDL_inst_clk_bfm
+Info: get_instance_interface_property AlarmClockHDL_inst_clk_bfm clk CLASS_NAME
+Info: add_connection AlarmClockHDL_inst_clk_bfm.clk AlarmClockHDL_inst.clk
+Info: get_instance_interface_property AlarmClockHDL_inst alarm1 CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: alarm1
+Info: TB_Gen: conduit_end found: alarm1
+Info: get_instance_interface_property AlarmClockHDL_inst alarm1 CLASS_NAME
+Info: add_instance AlarmClockHDL_inst_alarm1_bfm altera_conduit_bfm 
+Info: get_instance_property AlarmClockHDL_inst_alarm1_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst alarm1 associatedClock
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst alarm1 associatedReset
+Info: get_instance_interface_ports AlarmClockHDL_inst alarm1
+Info: get_instance_interface_port_property AlarmClockHDL_inst alarm1 alarm1_export ROLE
+Info: get_instance_interface_port_property AlarmClockHDL_inst alarm1 alarm1_export WIDTH
+Info: get_instance_interface_port_property AlarmClockHDL_inst alarm1 alarm1_export DIRECTION
+Info: set_instance_parameter_value AlarmClockHDL_inst_alarm1_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_alarm1_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_alarm1_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value AlarmClockHDL_inst_alarm1_bfm SIGNAL_WIDTHS 1
+Info: set_instance_parameter_value AlarmClockHDL_inst_alarm1_bfm SIGNAL_DIRECTIONS output
+Info: get_instance_property AlarmClockHDL_inst_alarm1_bfm CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst alarm1 CLASS_NAME
+Info: get_instance_interfaces AlarmClockHDL_inst_alarm1_bfm
+Info: get_instance_interface_property AlarmClockHDL_inst_alarm1_bfm conduit CLASS_NAME
+Info: add_connection AlarmClockHDL_inst_alarm1_bfm.conduit AlarmClockHDL_inst.alarm1
+Info: get_instance_interface_property AlarmClockHDL_inst button1 CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: button1
+Info: TB_Gen: conduit_end found: button1
+Info: get_instance_interface_property AlarmClockHDL_inst button1 CLASS_NAME
+Info: add_instance AlarmClockHDL_inst_button1_bfm altera_conduit_bfm 
+Info: get_instance_property AlarmClockHDL_inst_button1_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst button1 associatedClock
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst button1 associatedReset
+Info: get_instance_interface_ports AlarmClockHDL_inst button1
+Info: get_instance_interface_port_property AlarmClockHDL_inst button1 button1_export ROLE
+Info: get_instance_interface_port_property AlarmClockHDL_inst button1 button1_export WIDTH
+Info: get_instance_interface_port_property AlarmClockHDL_inst button1 button1_export DIRECTION
+Info: set_instance_parameter_value AlarmClockHDL_inst_button1_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_button1_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_button1_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value AlarmClockHDL_inst_button1_bfm SIGNAL_WIDTHS 1
+Info: set_instance_parameter_value AlarmClockHDL_inst_button1_bfm SIGNAL_DIRECTIONS output
+Info: get_instance_property AlarmClockHDL_inst_button1_bfm CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst button1 CLASS_NAME
+Info: get_instance_interfaces AlarmClockHDL_inst_button1_bfm
+Info: get_instance_interface_property AlarmClockHDL_inst_button1_bfm conduit CLASS_NAME
+Info: add_connection AlarmClockHDL_inst_button1_bfm.conduit AlarmClockHDL_inst.button1
+Info: get_instance_interface_property AlarmClockHDL_inst button2 CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: button2
+Info: TB_Gen: conduit_end found: button2
+Info: get_instance_interface_property AlarmClockHDL_inst button2 CLASS_NAME
+Info: add_instance AlarmClockHDL_inst_button2_bfm altera_conduit_bfm 
+Info: get_instance_property AlarmClockHDL_inst_button2_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst button2 associatedClock
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst button2 associatedReset
+Info: get_instance_interface_ports AlarmClockHDL_inst button2
+Info: get_instance_interface_port_property AlarmClockHDL_inst button2 button2_export ROLE
+Info: get_instance_interface_port_property AlarmClockHDL_inst button2 button2_export WIDTH
+Info: get_instance_interface_port_property AlarmClockHDL_inst button2 button2_export DIRECTION
+Info: set_instance_parameter_value AlarmClockHDL_inst_button2_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_button2_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_button2_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value AlarmClockHDL_inst_button2_bfm SIGNAL_WIDTHS 1
+Info: set_instance_parameter_value AlarmClockHDL_inst_button2_bfm SIGNAL_DIRECTIONS output
+Info: get_instance_property AlarmClockHDL_inst_button2_bfm CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst button2 CLASS_NAME
+Info: get_instance_interfaces AlarmClockHDL_inst_button2_bfm
+Info: get_instance_interface_property AlarmClockHDL_inst_button2_bfm conduit CLASS_NAME
+Info: add_connection AlarmClockHDL_inst_button2_bfm.conduit AlarmClockHDL_inst.button2
+Info: get_instance_interface_property AlarmClockHDL_inst button3 CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: button3
+Info: TB_Gen: conduit_end found: button3
+Info: get_instance_interface_property AlarmClockHDL_inst button3 CLASS_NAME
+Info: add_instance AlarmClockHDL_inst_button3_bfm altera_conduit_bfm 
+Info: get_instance_property AlarmClockHDL_inst_button3_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst button3 associatedClock
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst button3 associatedReset
+Info: get_instance_interface_ports AlarmClockHDL_inst button3
+Info: get_instance_interface_port_property AlarmClockHDL_inst button3 button3_export ROLE
+Info: get_instance_interface_port_property AlarmClockHDL_inst button3 button3_export WIDTH
+Info: get_instance_interface_port_property AlarmClockHDL_inst button3 button3_export DIRECTION
+Info: set_instance_parameter_value AlarmClockHDL_inst_button3_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_button3_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_button3_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value AlarmClockHDL_inst_button3_bfm SIGNAL_WIDTHS 1
+Info: set_instance_parameter_value AlarmClockHDL_inst_button3_bfm SIGNAL_DIRECTIONS output
+Info: get_instance_property AlarmClockHDL_inst_button3_bfm CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst button3 CLASS_NAME
+Info: get_instance_interfaces AlarmClockHDL_inst_button3_bfm
+Info: get_instance_interface_property AlarmClockHDL_inst_button3_bfm conduit CLASS_NAME
+Info: add_connection AlarmClockHDL_inst_button3_bfm.conduit AlarmClockHDL_inst.button3
+Info: get_instance_interface_property AlarmClockHDL_inst button4 CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: button4
+Info: TB_Gen: conduit_end found: button4
+Info: get_instance_interface_property AlarmClockHDL_inst button4 CLASS_NAME
+Info: add_instance AlarmClockHDL_inst_button4_bfm altera_conduit_bfm 
+Info: get_instance_property AlarmClockHDL_inst_button4_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst button4 associatedClock
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst button4 associatedReset
+Info: get_instance_interface_ports AlarmClockHDL_inst button4
+Info: get_instance_interface_port_property AlarmClockHDL_inst button4 button4_export ROLE
+Info: get_instance_interface_port_property AlarmClockHDL_inst button4 button4_export WIDTH
+Info: get_instance_interface_port_property AlarmClockHDL_inst button4 button4_export DIRECTION
+Info: set_instance_parameter_value AlarmClockHDL_inst_button4_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_button4_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_button4_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value AlarmClockHDL_inst_button4_bfm SIGNAL_WIDTHS 1
+Info: set_instance_parameter_value AlarmClockHDL_inst_button4_bfm SIGNAL_DIRECTIONS output
+Info: get_instance_property AlarmClockHDL_inst_button4_bfm CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst button4 CLASS_NAME
+Info: get_instance_interfaces AlarmClockHDL_inst_button4_bfm
+Info: get_instance_interface_property AlarmClockHDL_inst_button4_bfm conduit CLASS_NAME
+Info: add_connection AlarmClockHDL_inst_button4_bfm.conduit AlarmClockHDL_inst.button4
+Info: get_instance_interface_property AlarmClockHDL_inst buzzer CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: buzzer
+Info: TB_Gen: conduit_end found: buzzer
+Info: get_instance_interface_property AlarmClockHDL_inst buzzer CLASS_NAME
+Info: add_instance AlarmClockHDL_inst_buzzer_bfm altera_conduit_bfm 
+Info: get_instance_property AlarmClockHDL_inst_buzzer_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst buzzer associatedClock
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst buzzer associatedReset
+Info: get_instance_interface_ports AlarmClockHDL_inst buzzer
+Info: get_instance_interface_port_property AlarmClockHDL_inst buzzer buzzer_export ROLE
+Info: get_instance_interface_port_property AlarmClockHDL_inst buzzer buzzer_export WIDTH
+Info: get_instance_interface_port_property AlarmClockHDL_inst buzzer buzzer_export DIRECTION
+Info: set_instance_parameter_value AlarmClockHDL_inst_buzzer_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_buzzer_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_buzzer_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value AlarmClockHDL_inst_buzzer_bfm SIGNAL_WIDTHS 2
+Info: set_instance_parameter_value AlarmClockHDL_inst_buzzer_bfm SIGNAL_DIRECTIONS input
+Info: get_instance_property AlarmClockHDL_inst_buzzer_bfm CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst buzzer CLASS_NAME
+Info: get_instance_interfaces AlarmClockHDL_inst_buzzer_bfm
+Info: get_instance_interface_property AlarmClockHDL_inst_buzzer_bfm conduit CLASS_NAME
+Info: add_connection AlarmClockHDL_inst_buzzer_bfm.conduit AlarmClockHDL_inst.buzzer
+Info: get_instance_interface_property AlarmClockHDL_inst segment1 CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: segment1
+Info: TB_Gen: conduit_end found: segment1
+Info: get_instance_interface_property AlarmClockHDL_inst segment1 CLASS_NAME
+Info: add_instance AlarmClockHDL_inst_segment1_bfm altera_conduit_bfm 
+Info: get_instance_property AlarmClockHDL_inst_segment1_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst segment1 associatedClock
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst segment1 associatedReset
+Info: get_instance_interface_ports AlarmClockHDL_inst segment1
+Info: get_instance_interface_port_property AlarmClockHDL_inst segment1 segment1_export ROLE
+Info: get_instance_interface_port_property AlarmClockHDL_inst segment1 segment1_export WIDTH
+Info: get_instance_interface_port_property AlarmClockHDL_inst segment1 segment1_export DIRECTION
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment1_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment1_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment1_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment1_bfm SIGNAL_WIDTHS 7
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment1_bfm SIGNAL_DIRECTIONS input
+Info: get_instance_property AlarmClockHDL_inst_segment1_bfm CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst segment1 CLASS_NAME
+Info: get_instance_interfaces AlarmClockHDL_inst_segment1_bfm
+Info: get_instance_interface_property AlarmClockHDL_inst_segment1_bfm conduit CLASS_NAME
+Info: add_connection AlarmClockHDL_inst_segment1_bfm.conduit AlarmClockHDL_inst.segment1
+Info: get_instance_interface_property AlarmClockHDL_inst segment2 CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: segment2
+Info: TB_Gen: conduit_end found: segment2
+Info: get_instance_interface_property AlarmClockHDL_inst segment2 CLASS_NAME
+Info: add_instance AlarmClockHDL_inst_segment2_bfm altera_conduit_bfm 
+Info: get_instance_property AlarmClockHDL_inst_segment2_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst segment2 associatedClock
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst segment2 associatedReset
+Info: get_instance_interface_ports AlarmClockHDL_inst segment2
+Info: get_instance_interface_port_property AlarmClockHDL_inst segment2 segment2_export ROLE
+Info: get_instance_interface_port_property AlarmClockHDL_inst segment2 segment2_export WIDTH
+Info: get_instance_interface_port_property AlarmClockHDL_inst segment2 segment2_export DIRECTION
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment2_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment2_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment2_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment2_bfm SIGNAL_WIDTHS 7
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment2_bfm SIGNAL_DIRECTIONS input
+Info: get_instance_property AlarmClockHDL_inst_segment2_bfm CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst segment2 CLASS_NAME
+Info: get_instance_interfaces AlarmClockHDL_inst_segment2_bfm
+Info: get_instance_interface_property AlarmClockHDL_inst_segment2_bfm conduit CLASS_NAME
+Info: add_connection AlarmClockHDL_inst_segment2_bfm.conduit AlarmClockHDL_inst.segment2
+Info: get_instance_interface_property AlarmClockHDL_inst segment3 CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: segment3
+Info: TB_Gen: conduit_end found: segment3
+Info: get_instance_interface_property AlarmClockHDL_inst segment3 CLASS_NAME
+Info: add_instance AlarmClockHDL_inst_segment3_bfm altera_conduit_bfm 
+Info: get_instance_property AlarmClockHDL_inst_segment3_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst segment3 associatedClock
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst segment3 associatedReset
+Info: get_instance_interface_ports AlarmClockHDL_inst segment3
+Info: get_instance_interface_port_property AlarmClockHDL_inst segment3 segment3_export ROLE
+Info: get_instance_interface_port_property AlarmClockHDL_inst segment3 segment3_export WIDTH
+Info: get_instance_interface_port_property AlarmClockHDL_inst segment3 segment3_export DIRECTION
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment3_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment3_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment3_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment3_bfm SIGNAL_WIDTHS 7
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment3_bfm SIGNAL_DIRECTIONS input
+Info: get_instance_property AlarmClockHDL_inst_segment3_bfm CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst segment3 CLASS_NAME
+Info: get_instance_interfaces AlarmClockHDL_inst_segment3_bfm
+Info: get_instance_interface_property AlarmClockHDL_inst_segment3_bfm conduit CLASS_NAME
+Info: add_connection AlarmClockHDL_inst_segment3_bfm.conduit AlarmClockHDL_inst.segment3
+Info: get_instance_interface_property AlarmClockHDL_inst segment4 CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: segment4
+Info: TB_Gen: conduit_end found: segment4
+Info: get_instance_interface_property AlarmClockHDL_inst segment4 CLASS_NAME
+Info: add_instance AlarmClockHDL_inst_segment4_bfm altera_conduit_bfm 
+Info: get_instance_property AlarmClockHDL_inst_segment4_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst segment4 associatedClock
+Info: get_instance_interface_parameter_value AlarmClockHDL_inst segment4 associatedReset
+Info: get_instance_interface_ports AlarmClockHDL_inst segment4
+Info: get_instance_interface_port_property AlarmClockHDL_inst segment4 segment4_export ROLE
+Info: get_instance_interface_port_property AlarmClockHDL_inst segment4 segment4_export WIDTH
+Info: get_instance_interface_port_property AlarmClockHDL_inst segment4 segment4_export DIRECTION
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment4_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment4_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment4_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment4_bfm SIGNAL_WIDTHS 7
+Info: set_instance_parameter_value AlarmClockHDL_inst_segment4_bfm SIGNAL_DIRECTIONS input
+Info: get_instance_property AlarmClockHDL_inst_segment4_bfm CLASS_NAME
+Info: get_instance_interface_property AlarmClockHDL_inst segment4 CLASS_NAME
+Info: get_instance_interfaces AlarmClockHDL_inst_segment4_bfm
+Info: get_instance_interface_property AlarmClockHDL_inst_segment4_bfm conduit CLASS_NAME
+Info: add_connection AlarmClockHDL_inst_segment4_bfm.conduit AlarmClockHDL_inst.segment4
+Info: send_message Info TB_Gen: Saving testbench system: AlarmClockHDL_tb.qsys
+Info: TB_Gen: Saving testbench system: AlarmClockHDL_tb.qsys
+Info: save_system AlarmClockHDL_tb.qsys
+Info: send_message Info TB_Gen: TBGEN SUCCESSFUL
+Info: TB_Gen: TBGEN SUCCESSFUL
+Info: Testbench system: C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb.qsys
+Info: Done
+Info: qsys-generate C:\Users\seba2\Documents\quartusProjects\CPU2\AlarmClockHDL.qsys --simulation=VERILOG --allow-mixed-language-simulation --testbench=STANDARD --testbench-simulation=VERILOG --allow-mixed-language-testbench-simulation --output-directory=C:\Users\seba2\Documents\quartusProjects\CPU2\AlarmClockHDL\testbench\AlarmClockHDL_tb\simulation --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading testbench/AlarmClockHDL_tb.qsys
+Progress: Reading input file
+Progress: Adding AlarmClockHDL_inst [AlarmClockHDL 1.0]
+Progress: Parameterizing module AlarmClockHDL_inst
+Progress: Adding AlarmClockHDL_inst_alarm1_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module AlarmClockHDL_inst_alarm1_bfm
+Progress: Adding AlarmClockHDL_inst_button1_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module AlarmClockHDL_inst_button1_bfm
+Progress: Adding AlarmClockHDL_inst_button2_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module AlarmClockHDL_inst_button2_bfm
+Progress: Adding AlarmClockHDL_inst_button3_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module AlarmClockHDL_inst_button3_bfm
+Progress: Adding AlarmClockHDL_inst_button4_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module AlarmClockHDL_inst_button4_bfm
+Progress: Adding AlarmClockHDL_inst_buzzer_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module AlarmClockHDL_inst_buzzer_bfm
+Progress: Adding AlarmClockHDL_inst_clk_bfm [altera_avalon_clock_source 18.1]
+Progress: Parameterizing module AlarmClockHDL_inst_clk_bfm
+Progress: Adding AlarmClockHDL_inst_segment1_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module AlarmClockHDL_inst_segment1_bfm
+Progress: Adding AlarmClockHDL_inst_segment2_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module AlarmClockHDL_inst_segment2_bfm
+Progress: Adding AlarmClockHDL_inst_segment3_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module AlarmClockHDL_inst_segment3_bfm
+Progress: Adding AlarmClockHDL_inst_segment4_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module AlarmClockHDL_inst_segment4_bfm
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: AlarmClockHDL_tb.AlarmClockHDL_inst.ALARM1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: AlarmClockHDL_tb.AlarmClockHDL_inst.BUTTON1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: AlarmClockHDL_tb.AlarmClockHDL_inst.BUTTON2: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: AlarmClockHDL_tb.AlarmClockHDL_inst.BUTTON3: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: AlarmClockHDL_tb.AlarmClockHDL_inst.BUTTON4: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: AlarmClockHDL_tb.AlarmClockHDL_inst.JTAG: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: AlarmClockHDL_tb.AlarmClockHDL_inst_clk_bfm: Elaborate: altera_clock_source
+Info: AlarmClockHDL_tb.AlarmClockHDL_inst_clk_bfm:            $Revision: #1 $
+Info: AlarmClockHDL_tb.AlarmClockHDL_inst_clk_bfm:            $Date: 2018/07/18 $
+Info: AlarmClockHDL_tb: Generating AlarmClockHDL_tb "AlarmClockHDL_tb" for SIM_VERILOG
+Info: AlarmClockHDL_inst: "AlarmClockHDL_tb" instantiated AlarmClockHDL "AlarmClockHDL_inst"
+Info: AlarmClockHDL_inst_alarm1_bfm: "AlarmClockHDL_tb" instantiated altera_conduit_bfm "AlarmClockHDL_inst_alarm1_bfm"
+Info: AlarmClockHDL_inst_buzzer_bfm: "AlarmClockHDL_tb" instantiated altera_conduit_bfm "AlarmClockHDL_inst_buzzer_bfm"
+Info: Reusing file C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb/simulation/submodules/verbosity_pkg.sv
+Info: AlarmClockHDL_inst_clk_bfm: "AlarmClockHDL_tb" instantiated altera_avalon_clock_source "AlarmClockHDL_inst_clk_bfm"
+Info: Reusing file C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb/simulation/submodules/verbosity_pkg.sv
+Info: AlarmClockHDL_inst_segment1_bfm: "AlarmClockHDL_tb" instantiated altera_conduit_bfm "AlarmClockHDL_inst_segment1_bfm"
+Info: Reusing file C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb/simulation/submodules/verbosity_pkg.sv
+Info: ALARM1: Starting RTL generation for module 'AlarmClockHDL_ALARM1'
+Info: ALARM1:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=AlarmClockHDL_ALARM1 --dir=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0033_ALARM1_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0033_ALARM1_gen//AlarmClockHDL_ALARM1_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0033_ALARM1_gen/  ]
+Info: ALARM1: Done RTL generation for module 'AlarmClockHDL_ALARM1'
+Info: ALARM1: "AlarmClockHDL_inst" instantiated altera_avalon_pio "ALARM1"
+Info: BUZZ: Starting RTL generation for module 'AlarmClockHDL_BUZZ'
+Info: BUZZ:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=AlarmClockHDL_BUZZ --dir=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0034_BUZZ_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0034_BUZZ_gen//AlarmClockHDL_BUZZ_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0034_BUZZ_gen/  ]
+Info: BUZZ: Done RTL generation for module 'AlarmClockHDL_BUZZ'
+Info: BUZZ: "AlarmClockHDL_inst" instantiated altera_avalon_pio "BUZZ"
+Info: JTAG: Starting RTL generation for module 'AlarmClockHDL_JTAG'
+Info: JTAG:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=AlarmClockHDL_JTAG --dir=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0035_JTAG_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0035_JTAG_gen//AlarmClockHDL_JTAG_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0035_JTAG_gen/  ]
+Info: JTAG: Done RTL generation for module 'AlarmClockHDL_JTAG'
+Info: JTAG: "AlarmClockHDL_inst" instantiated altera_avalon_jtag_uart "JTAG"
+Info: NIOSII: "AlarmClockHDL_inst" instantiated altera_nios2_gen2 "NIOSII"
+Info: ONCHIPRAM: Starting RTL generation for module 'AlarmClockHDL_ONCHIPRAM'
+Info: ONCHIPRAM:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=AlarmClockHDL_ONCHIPRAM --dir=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0036_ONCHIPRAM_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0036_ONCHIPRAM_gen//AlarmClockHDL_ONCHIPRAM_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0036_ONCHIPRAM_gen/  ]
+Info: ONCHIPRAM: Done RTL generation for module 'AlarmClockHDL_ONCHIPRAM'
+Info: ONCHIPRAM: "AlarmClockHDL_inst" instantiated altera_avalon_onchip_memory2 "ONCHIPRAM"
+Info: SEGMENT1: Starting RTL generation for module 'AlarmClockHDL_SEGMENT1'
+Info: SEGMENT1:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=AlarmClockHDL_SEGMENT1 --dir=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0037_SEGMENT1_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0037_SEGMENT1_gen//AlarmClockHDL_SEGMENT1_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0037_SEGMENT1_gen/  ]
+Info: SEGMENT1: Done RTL generation for module 'AlarmClockHDL_SEGMENT1'
+Info: SEGMENT1: "AlarmClockHDL_inst" instantiated altera_avalon_pio "SEGMENT1"
+Info: TIMER: Starting RTL generation for module 'AlarmClockHDL_TIMER'
+Info: TIMER:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=AlarmClockHDL_TIMER --dir=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0038_TIMER_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0038_TIMER_gen//AlarmClockHDL_TIMER_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0038_TIMER_gen/  ]
+Info: TIMER: Done RTL generation for module 'AlarmClockHDL_TIMER'
+Info: TIMER: "AlarmClockHDL_inst" instantiated altera_avalon_timer "TIMER"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_013: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "AlarmClockHDL_inst" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "AlarmClockHDL_inst" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "AlarmClockHDL_inst" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'AlarmClockHDL_NIOSII_cpu'
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=AlarmClockHDL_NIOSII_cpu --dir=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0041_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0041_cpu_gen//AlarmClockHDL_NIOSII_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0041_cpu_gen/  ]
+Info: cpu: # 2024.08.15 19:03:35 (*) Starting Nios II generation
+Info: cpu: # 2024.08.15 19:03:35 (*)   Checking for plaintext license.
+Info: cpu: # 2024.08.15 19:03:36 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/18.1/quartus/bin64/
+Info: cpu: # 2024.08.15 19:03:36 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2024.08.15 19:03:36 (*)   Plaintext license not found.
+Info: cpu: # 2024.08.15 19:03:36 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2024.08.15 19:03:36 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2024.08.15 19:03:36 (*)   Creating all objects for CPU
+Info: cpu: # 2024.08.15 19:03:37 (*)   Creating 'C:/Users/seba2/AppData/Local/Temp/alt9950_3986658367284019123.dir/0041_cpu_gen//AlarmClockHDL_NIOSII_cpu_nios2_waves.do'
+Info: cpu: # 2024.08.15 19:03:37 (*)   Generating RTL from CPU objects
+Info: cpu: # 2024.08.15 19:03:37 (*)   Creating plain-text RTL
+Info: cpu: # 2024.08.15 19:03:38 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'AlarmClockHDL_NIOSII_cpu'
+Info: cpu: "NIOSII" instantiated altera_nios2_gen2_unit "cpu"
+Info: NIOSII_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "NIOSII_data_master_translator"
+Info: JTAG_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "JTAG_avalon_jtag_slave_translator"
+Info: NIOSII_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "NIOSII_data_master_agent"
+Info: JTAG_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "JTAG_avalon_jtag_slave_agent"
+Info: JTAG_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "JTAG_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/AlarmClockHDL_tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: AlarmClockHDL_tb: Done "AlarmClockHDL_tb" with 36 modules, 57 files
+Info: qsys-generate succeeded.
+Info: sim-script-gen --spd=C:\Users\seba2\Documents\quartusProjects\CPU2\AlarmClockHDL_tb.spd --output-directory=C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Users\seba2\Documents\quartusProjects\CPU2\AlarmClockHDL_tb.spd --output-directory=C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	36 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/seba2/Documents/quartusProjects/CPU2/AlarmClockHDL/testbench/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create testbench Platform Designer system

@@ -99,7 +99,7 @@
     volatile unsigned short * buzzer = (short *) 0x00021070;
 
 
-    int seconds,  hours , minutes;
+    int seconds,  hours , minutes, indx, debounce, state ,isAlarmOn, aHours,aMinutes;
 
     static void timer_isr(void * context, alt_u32 id);
 
@@ -137,25 +137,29 @@ int intTo7segment(char number){
 	  case '9':
 		  return 0b0010000;
 	  	    break;
+
 	  default:
 	    return 0b1111111;
 	}
 
 }
 
-int displayHour(int hour, int minute){
-
-char hStr[3] ;
-char mStr[3] ;
-
-sprintf(hStr,"%d",hour);
-sprintf(mStr,"%d",minute);
+void displayHour(int hour, int minute){
 
 
-*segment1 = intTo7segment(mStr[1]);
-*segment2 = intTo7segment(mStr[0]);
-*segment3 = intTo7segment(hStr[1]);
-*segment4 = intTo7segment(hStr[0]);
+
+
+	char hStr[3] ;
+	char mStr[3] ;
+
+	sprintf(hStr,"%d",hour);
+	sprintf(mStr,"%d",minute);
+
+
+	*segment1 = intTo7segment(mStr[1]);
+	*segment2 = intTo7segment(mStr[0]);
+	*segment3 = intTo7segment(hStr[1]);
+	*segment4 = intTo7segment(hStr[0]);
 
 }
 
@@ -182,16 +186,271 @@ static void timer_isr(void * context, alt_u32 id){
 
 	if(count%4 == 0){
 			seconds++;
+			checkClock();
+
+
 		}
-	displayHour(hours,minutes);
+	if(debounce != 0){
+			debounce--;
+	}
+
+
+	//displayHour(hours,minutes);
 	printf("\nTimer expired: %d",count++);
 
 
 
 }
 
+void checkAlarm(){
+	if(hours == aHours && minutes == aMinutes){
+		*buzzer = 0b10;
+		printf("PimPom alarma");
+	}else{
+		;
+	}
+}
+
+void checkClock(void){
+
+	if(seconds >= 60){
+		 minutes ++;
+		 seconds = 0;
+		 checkAlarm();
+}
+	else if (minutes >= 60){
+		hours++;
+		minutes = 0;
+
+}
+	else if (minutes < 0){
+			hours--;
+			minutes = 59;
+}
+	else if(hours >= 24){
+		hours = 0;
+}
+	else if(hours < 0){
+			hours = 23;
+}
+	displayHour(hours,minutes);
 
 
+}
+
+
+void sumIndex( int op){
+
+	if(op == 0){
+
+		switch(indx){
+			case 0:
+					minutes += 1;
+					break;
+			case 1:
+					minutes += 10;
+					break;
+			case 2:
+					hours += 1;
+					break;
+			case 3:
+					hours += 10;
+					break;
+
+	}
+	}
+		else {
+
+
+			switch(indx){
+				case 0:
+						minutes -= 1;
+						break;
+				case 1:
+						minutes -= 10;
+						break;
+				case 2:
+						hours -= 1;
+						break;
+				case 3:
+						hours -= 10;
+						break;
+	}
+	}
+
+}
+
+void sumIndexAlarm( int op){
+
+	if(op == 0){
+
+		switch(indx){
+			case 0:
+					aMinutes += 1;
+					break;
+			case 1:
+					aMinutes += 10;
+					break;
+			case 2:
+					aHours += 1;
+					break;
+			case 3:
+					aHours += 10;
+					break;
+
+	}
+	}
+		else {
+
+
+			switch(indx){
+				case 0:
+					aMinutes -= 1;
+						break;
+				case 1:
+					aMinutes -= 10;
+						break;
+				case 2:
+					aHours -= 1;
+						break;
+				case 3:
+					aHours -= 10;
+						break;
+	}
+	}
+
+
+	if (aMinutes >= 60){
+		aHours++;
+		aMinutes = 0;
+}
+	else if (aMinutes < 0){
+			aHours--;
+			aMinutes = 59;
+}
+	else if(aHours >= 24){
+		aHours = 0;
+}
+	else if(aHours < 0){
+			aHours = 23;
+}else{
+	displayHour(aHours,aMinutes);
+}
+	displayHour(aHours,aMinutes);
+
+
+}
+
+void clockSetup(){
+	indx = 0;
+	int setup =1;
+
+	printf("setting up the clock...");
+
+	while(setup){
+
+		if(debounce == 0){
+
+		if(*button4 == 0){
+
+			setup =0;
+			debounce = 2;
+			printf("setup finished");
+			if(isAlarmOn){
+				alarmSetup();
+			}
+
+		}
+		else if(*button3 == 0){
+			indx++;
+			debounce = 2;
+			if(indx > 3){
+				indx =0;
+			}
+		}
+		else if(*button2 == 0){
+
+			sumIndex( 1);
+			debounce = 2;
+			checkClock();
+				}
+		else if(*button1 == 0){
+
+			sumIndex( 0);
+			debounce = 2;
+			checkClock();
+			}
+		}
+		else{
+			checkClock();
+		}
+
+	}
+
+}
+
+
+
+
+void alarmSetup(){
+		indx = 0;
+		int setup =1;
+		if(isAlarmOn ==0){
+			aHours = hours;
+			aMinutes = minutes;
+			isAlarmOn = 1;
+
+		}
+
+
+		printf("setting up the Alarm");
+
+			while(setup){
+
+					if(debounce == 0){
+
+						if(*button4 == 0){
+
+							setup =0;
+							debounce = 2;
+
+							printf("setup finished");
+
+						}
+						else if(*button3 == 0){
+							indx++;
+							debounce = 2;
+							if(indx >= 4){
+								indx =0;
+							}
+
+						}
+						else if(*button2 == 0){
+
+							sumIndexAlarm(  1);
+							debounce = 2;
+							displayHour(aHours,aMinutes);
+								}
+						else if(*button1 == 0){
+
+							sumIndexAlarm( 0);
+							debounce = 2;
+							displayHour(aHours,aMinutes);
+							}
+						else{
+							displayHour(aHours,aMinutes);
+												}
+						}else{
+							displayHour(aHours,aMinutes);
+						}
+
+
+					}
+
+
+
+
+}
 
 int main()
 { 
@@ -209,35 +468,39 @@ int main()
 		hours = 0;
 		minutes = 0;
 		seconds = 0;
+		debounce = 0;
+		isAlarmOn = 0;
+		*buzzer = 0b00;
 
 		displayHour(hours,minutes);
 
 
   while (1){
 
-	  if (*button1 == 0){
+	  if(debounce == 0){
 
-	    		//alt_putstr("seconds passed:");
-	    		//alt_putstr(seconds);
+	  if (*button4 == 0){
+		  debounce = 2;
+		  //printf("debounce2: %d",debounce);
+		  clockSetup();
+
+
 	    	  }
+	  else if(*alarm1 != 0){
 
-	  if(seconds == 60){
-		  minutes ++;
-		  seconds = 0;
+		  if(isAlarmOn==0){
+			  alarmSetup();
+			  isAlarmOn = 1;
+			  debounce =2;
+		  }
+
+	  }else if(*alarm1 == 0){
+		  isAlarmOn = 0;
+		  *buzzer = 0b00;
+	  }
 	  }
 
-	  else if (minutes == 60){
-		  hours++;
-		  minutes = 0;
-	  }
-	  else if(hours == 24){
-		  hours = 0;
-	  }
-
-
-
-
-  	  displayHour(hours,minutes);
+	  checkClock();
 
 
   }
